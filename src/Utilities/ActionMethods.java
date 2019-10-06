@@ -14,18 +14,26 @@ public class ActionMethods extends SetupBreakDown {
 	
 	public void clickByXpath(String XPATH, String ScreenshotName) throws Exception {
 		
+		try {	
+		driver.findElement(By.xpath(XPATH)).click();	
+		}catch (Exception E) {
+			takeSnapShot(driver, "/Users/mahmudulalam/Desktop/GroupHRMProject/GroupHRMProject/Errors/"+ScreenshotName+".jpeg" );
+			System.out.println("Following exception is found " + E.getMessage());	
+		}	
+	}
+	
+	public void clickById(String ID, String ScreenshotName) throws Exception {
 		try {
-			
-		driver.findElement(By.xpath(XPATH)).click();
+		driver.findElement(By.id(ID)).click();
 			
 		}catch (Exception E) {
 			takeSnapShot(driver, "/Users/mahmudulalam/Desktop/GroupHRMProject/GroupHRMProject/Errors/"+ScreenshotName+".jpeg" );
-			System.out.println("Following exception is found " + E.getMessage());
-			
+			System.out.println("Following exception is found " + E.getMessage());	
 		}
 		
-		
 	}
+	
+	
 	
 
 	
@@ -45,7 +53,6 @@ public class ActionMethods extends SetupBreakDown {
 
                 //Copy file at destination
                 FileUtils.copyFile(SrcFile, DestFile);
-
     }
 
 }
