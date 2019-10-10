@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="573" started-at="2019-10-06T15:48:33 EDT" finished-at="2019-10-06T15:48:33 EDT">
+  <suite name="Default suite" duration-ms="12610" started-at="2019-10-08T01:28:42 EDT" finished-at="2019-10-08T01:28:55 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="573" started-at="2019-10-06T15:48:33 EDT" finished-at="2019-10-06T15:48:33 EDT">
+    <test name="Default test" duration-ms="12610" started-at="2019-10-08T01:28:42 EDT" finished-at="2019-10-08T01:28:55 EDT">
       <class name="Tests.test1">
-        <test-method status="PASS" signature="beforeSuit()[pri:0, instance:Tests.test1@210366b4]" name="beforeSuit" is-config="true" duration-ms="4290" started-at="2019-10-06T15:48:28 EDT" finished-at="2019-10-06T15:48:33 EDT">
+        <test-method status="PASS" signature="beforeSuit()[pri:0, instance:Tests.test1@eec5a4a]" name="beforeSuit" is-config="true" duration-ms="3689" started-at="2019-10-08T01:28:39 EDT" finished-at="2019-10-08T01:28:42 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Tests.test1@210366b4]" name="openBrowser" duration-ms="524" started-at="2019-10-06T15:48:33 EDT" finished-at="2019-10-06T15:48:33 EDT">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Tests.test1@eec5a4a]" name="openBrowser" duration-ms="12559" started-at="2019-10-08T01:28:42 EDT" finished-at="2019-10-08T01:28:55 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Tests.test1@eec5a4a]" name="afterSuite" is-config="true" duration-ms="167" started-at="2019-10-08T01:28:55 EDT" finished-at="2019-10-08T01:28:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- Tests.test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
